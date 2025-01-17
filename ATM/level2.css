@@ -1,0 +1,152 @@
+/* Global Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Container for content */
+.container {
+  display: flex;
+  justify-content: space-around;
+  margin: 0 auto;
+}
+
+/* Header (Navbar) */
+header {
+  background-color: #000;
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo {
+  color: #fff;
+  font-size: 30px;
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+
+/* Gap Section */
+.gap {
+  height: 20px;
+  background-color: #fff;
+}
+
+/* Home Bar (Welcome to ATM) */
+.home-bar {
+  background-color: #000;
+  color: #fff;
+  text-align: left;
+  padding: 20px 0;
+}
+
+.home-bar h2 {
+  font-size: 20x;
+  margin-bottom: 10px;
+}
+h1 :start {
+  display: inline-block;
+}
+
+.home-bar p {
+  font-size: 16px;
+}
+
+/* Movie Compartment Grid */
+.movie-compartments {
+  padding: 40px 0;
+  background-color: #fff;
+  margin-bottom: 20px;
+}
+
+.movie-compartments h2 {
+  font-size: 28px;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 20px;
+}
+
+@media (max-width: 1200px) {
+  .grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 800px) {
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 300px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.movie {
+  text-align: center;
+  border: 1px solid #ddd;
+  padding: 10px;
+  background-color: #f8f8f8;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.movie img {
+  width: 100%; /* Image will be 100% of the container */
+  max-width: 180px; /* Maximum width of the image */
+  height: auto; /* Maintain aspect ratio */
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+.movie p {
+  font-size: 16px;
+  font-weight: bold;
+  color: #333;
+}
+
+.movie:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Footer (Contact) */
+footer {
+  background-color: #000;
+  color: #fff;
+  padding: 30px 0;
+  text-align: center;
+  font-size: 14px;
+}
+
+footer h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+footer p {
+  margin: 5px 0;
+  font-size: 16px;
+}
+
+@media (max-width: 480px) {
+  footer p {
+    font-size: 14px;
+  }
+}
