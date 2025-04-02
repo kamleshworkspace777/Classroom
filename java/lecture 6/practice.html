@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Greatstack</title>
+  </head>
+  <body>
+    <div>
+      <p>JavaScript DOM</p>
+      <p>JavaScript DOM</p>
+      <p>JavaScript DOM</p>
+      <!--here div is parent element and p is child elements -->
+      <p>JavaScript DOM</p>
+    </div>
+    <!--The getElementById() method returns an Element object that represents html element-->
+    <div>
+      <p id="message">JavaScript code</p>
+    </div>
+    <h1 class="heading">First heading</h1>
+    <div id="container">
+      <h1 class="heading">second heading</h1>
+      <h1 class="heading">third heading</h1>
+    </div>
+    <!--Transverse element-->
+    <div class="traverselement">
+      <p class="child">this is child element</p>
+    </div>
+    <!--Manpulating HTML-->
+    <!--Appendchild()-->
+    <ul id="menu">
+      <li>HOME</li>
+      <li>ABOUT</li>
+      <li>BLOG</li>
+      <li>PROJECT</li>
+    </ul>
+    <script>
+      let msg = document.getElementById("message");
+      console.log(msg);
+      let messg = document.querySelectorAll("#container");
+      console.log(messg);
+      let msg2 = document.querySelectorAll(" div h1");
+      console.log(msg2);
+      //transverse element
+      let chld = document.querySelector(".child");
+      console.log(chld.parentNode);
+      //Manupulating the HTML
+      let div = document.createElement("div");
+      div.innerHTML = "<p>This has been written by manupulation HTML</p> ";
+      document.body.appendChild(div);
+      console.log(div);
+      //Appendchild()
+      let menu = document.getElementById("menu");
+      let list = document.createElement("li");
+      list.innerHTML = "contact";
+      menu.appendChild(list);
+      console.log(menu.textContent);
+    </script>
+  </body>
+</html>
